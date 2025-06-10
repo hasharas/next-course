@@ -1,5 +1,7 @@
 
 import Link from 'next/link'
+import AddtoCart from './users/components/AddtoCart'
+import CartProuduct from './users/components/CartProuduct'
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
         <Link href="/users/about" className="block px-4 py-2 bg-green-500 text-white rounded">
           About Page
         </Link>
+
+        {/* <AddtoCart /> */}
+        <CartProuduct />
       </div>
       
 
