@@ -14,12 +14,12 @@ const UserPage = async () => {
   const datas: Users [] = await fetchdata.json(); 
   console.log("users", datas)
 
-  
+  const time = new Date().toLocaleTimeString();
 
   return (
     <div className='p-4 bg-green-500'>
       <h1 className='font-green text-xs text-green-800'>user page 1</h1>
-
+<p>{time}</p>
       <ul>
         {datas.map( data  => (
           <li key={data.id}>
