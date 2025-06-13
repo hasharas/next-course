@@ -1,11 +1,13 @@
 
 import React from 'react';
 import AddtoCart from './AddtoCart';
+import style from './CartProuduct.module.css'
 
 const CartProuduct = () => {
   return (
     <div>
       <AddtoCart />
+      <p className={style.cart}>name is add to cart </p>
     </div>
   );
 }
