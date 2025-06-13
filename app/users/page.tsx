@@ -8,10 +8,13 @@ const UserPage = async () => {
     website:string;
   }
 
-  const fetchdata = await fetch('https://jsonplaceholder.typicode.com/users');
+  const fetchdata = await fetch('https://jsonplaceholder.typicode.com/users',
+    // {cache: 'no-store'} );
+    {next: {revalidate:10}});
   const datas: Users [] = await fetchdata.json(); 
   console.log("users", datas)
 
+  
 
   return (
     <div className='p-4 bg-green-500'>
