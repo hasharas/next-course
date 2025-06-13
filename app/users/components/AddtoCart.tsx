@@ -6,7 +6,7 @@ import React from 'react';
 const AddtoCart = () => {
   return (
     <div>
-      <button onClick={()=> console.log('Click the button')}>Click me</button>
+      <button className='flex item-center  bg-green' onClick={()=> console.log('Click the button')}>Click me</button>
     </div>
   );
 }

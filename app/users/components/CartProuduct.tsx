@@ -8,6 +8,7 @@ const CartProuduct = () => {
     <div>
       <AddtoCart />
       <p className={style.cart}>name is add to cart </p>
+      <p className='p-4 bg-green text-sm'>taildwind</p>
     </div>
   );
 }
