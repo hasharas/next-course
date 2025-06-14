@@ -14,14 +14,17 @@ export default function Home() {
         <Link href="/users" className="block px-4 py-2 bg-blue-500 text-white rounded">
           User Page
         </Link>
-        <Link href="/users/about" className="block px-4 py-2 bg-green-500 text-white rounded">
+        <Link
+          href="/users/about"
+          className="pageLink block px-4 py-2 bg-green-500 shadow hover:shadow-md text-white rounded transition duration-300"
+        >
           About Page
         </Link>
 
         {/* <AddtoCart /> */}
         <CartProuduct />
       </div>
-      
+
 
     </main>
   )
