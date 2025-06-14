@@ -16,7 +16,11 @@ export default function Home() {
         </Link>
         <Link
           href="/users/about"
-          className="pageLink block px-4 py-2 bg-green-500 shadow hover:shadow-md text-white rounded transition duration-300"
+          className="pageLink block px-4 py-2 bg-green-500 text-white rounded"
+          style={{
+            boxShadow:
+              '10px 8px #08b36c45, 20px 20px #03852b00, 2px 1px #0000, 15px 16px #178b2754, 0 1px 3px 0 rgb(0 125 41 / 0%), 0 1px 2px -1px rgb(0 153 44 / 0%)',
+          }}
         >
           About Page
         </Link>
